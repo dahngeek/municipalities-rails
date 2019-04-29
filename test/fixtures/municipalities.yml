@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  foundation_year: 2019-04-28 23:30:54
+  URL: MyString
+  mail: MyString
+  mayor: one
+
+two:
+  name: MyString
+  foundation_year: 2019-04-28 23:30:54
+  URL: MyString
+  mail: MyString
+  mayor: two

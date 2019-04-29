@@ -1,0 +1,42 @@
+<%= form_with(model: mayor, local: true) do |form| %>
+  <% if mayor.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(mayor.errors.count, "error") %> prohibited this mayor from being saved:</h2>
+
+      <ul>
+      <% mayor.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :last_name %>
+    <%= form.text_field :last_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nacionality %>
+    <%= form.text_field :nacionality %>
+  </div>
+
+  <div class="field">
+    <%= form.label :mail %>
+    <%= form.text_field :mail %>
+  </div>
+
+  <div class="field">
+    <%= form.label :phone %>
+    <%= form.number_field :phone %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @municipality.name %>
+</p>
+
+<p>
+  <strong>Foundation year:</strong>
+  <%= @municipality.foundation_year %>
+</p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @municipality.URL %>
+</p>
+
+<p>
+  <strong>Mail:</strong>
+  <%= @municipality.mail %>
+</p>
+
+<p>
+  <strong>Mayor:</strong>
+  <%= @municipality.mayor %>
+</p>
+
+<%= link_to 'Edit', edit_municipality_path(@municipality) %> |
+<%= link_to 'Back', municipalities_path %>

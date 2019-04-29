@@ -1,0 +1,42 @@
+<%= form_with(model: municipality, local: true) do |form| %>
+  <% if municipality.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(municipality.errors.count, "error") %> prohibited this municipality from being saved:</h2>
+
+      <ul>
+      <% municipality.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :foundation_year %>
+    <%= form.datetime_select :foundation_year %>
+  </div>
+
+  <div class="field">
+    <%= form.label :URL %>
+    <%= form.text_field :URL %>
+  </div>
+
+  <div class="field">
+    <%= form.label :mail %>
+    <%= form.text_field :mail %>
+  </div>
+
+  <div class="field">
+    <%= form.label :mayor_id %>
+    <%= form.text_field :mayor_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
