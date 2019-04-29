@@ -22,7 +22,7 @@
 
 <p>
   <strong>Mayor:</strong>
-  <%= @municipality.mayor %>
+  <%= @municipality.mayor.full_name %>
 </p>
 
 <%= link_to 'Edit', edit_municipality_path(@municipality) %> |

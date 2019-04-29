@@ -19,7 +19,7 @@
         <td><%= neighborhood.name %></td>
         <td><%= neighborhood.block_count %></td>
         <td><%= neighborhood.population %></td>
-        <td><%= neighborhood.municipality %></td>
+        <td><%= neighborhood.municipality.name %></td>
         <td><%= link_to 'Show', neighborhood %></td>
         <td><%= link_to 'Edit', edit_neighborhood_path(neighborhood) %></td>
         <td><%= link_to 'Destroy', neighborhood, method: :delete, data: { confirm: 'Are you sure?' } %></td>

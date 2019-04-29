@@ -28,7 +28,7 @@
 
   <div class="field">
     <%= form.label :municipality_id %>
-    <%= form.text_field :municipality_id %>
+    <%= collection_select(:neighborhood, :municipality_id, Municipality.all, :id, :name) %>
   </div>
 
   <div class="actions">
