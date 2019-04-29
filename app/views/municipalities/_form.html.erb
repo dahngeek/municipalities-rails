@@ -18,7 +18,7 @@
 
   <div class="field">
     <%= form.label :foundation_year %>
-    <%= form.datetime_select :foundation_year %>
+    <%= form.datetime_select :foundation_year, start_year:1900 %>
   </div>
 
   <div class="field">
@@ -33,7 +33,7 @@
 
   <div class="field">
     <%= form.label :mayor_id %>
-    <%= form.text_field :mayor_id %>
+    <%= collection_select(:municipality, :mayor_id, Mayor.all, :id, :name) %>
   </div>
 
   <div class="actions">

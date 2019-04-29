@@ -21,7 +21,7 @@
         <td><%= municipality.foundation_year %></td>
         <td><%= municipality.URL %></td>
         <td><%= municipality.mail %></td>
-        <td><%= municipality.mayor %></td>
+        <td><%= municipality.mayor.full_name %></td>
         <td><%= link_to 'Show', municipality %></td>
         <td><%= link_to 'Edit', edit_municipality_path(municipality) %></td>
         <td><%= link_to 'Destroy', municipality, method: :delete, data: { confirm: 'Are you sure?' } %></td>
